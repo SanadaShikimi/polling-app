@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 // ⚠️ THAY DÒNG DƯỚI BẰNG LINK BACKEND CỦA BẠN (Koyeb/Render)
 // Ví dụ: const API_URL = 'https://my-polling-backend.koyeb.app';
-const API_URL = 'https://my-polling-backend.onrender.com'; 
+const API_URL = 'https://many-pigeon-shikimi-cc6b69b2.koyeb.app'; 
 
 const CreatePoll = () => {
   const [question, setQuestion] = useState('');
