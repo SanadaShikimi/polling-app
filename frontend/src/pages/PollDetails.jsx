@@ -9,7 +9,7 @@ import {
 import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon } from 'react-share';
 
 // URL Backend (Khi deploy, bạn chỉ cần sửa dòng này)
-const API_URL = 'http://127.0.0.1:5000';
+const API_URL = 'https://many-pigeon-shikimi-cc6b69b2.koyeb.app';
 
 const PollDetails = () => {
   const { id } = useParams();
