@@ -1,0 +1,24 @@
+const mongoose = require('mongoose');
+
+const pollSchema = new mongoose.Schema({
+  question: {
+    type: String,
+    required: true,
+  },
+  options: [{
+    text: { type: String, required: true },
+    votes: { type: Number, default: 0 }
+  }],
+  // --- THAY ĐỔI Ở ĐÂY ---
+  // Đơn giản hóa: Chỉ lưu tổng số lượt thích
+  likes: {
+    type: Number,
+    default: 0
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
+});
+
+module.exports = mongoose.model('Poll', pollSchema);
