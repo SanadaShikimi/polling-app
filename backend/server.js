@@ -30,7 +30,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", 
+    origin: "https://pollingapp12.netlify.app", // Thay bằng URL Frontend của bạn
     methods: ["GET", "POST"]
   }
 });
